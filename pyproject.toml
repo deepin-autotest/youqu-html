@@ -1,0 +1,33 @@
+[project]
+name = "youqu3-boom"
+description = "youqu3-boom"
+authors = [
+    { name = "mikigo", email = "huangmingqiang@uniontech.com" },
+]
+dependencies = [
+    "pipenv",
+]
+dynamic = [
+    "version",
+]
+
+requires-python = ">=3.7"
+readme = "README.md"
+license = { text = "GPL2.0" }
+
+
+[project.scripts]
+youqu3-boom = "youqu3_boom.cli:cli"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+[tool.hatch]
+version = { path = "boom/__version__.py" }
+
+[tool.hatch.build.targets.wheel]
+packages = [
+    "/youqu3_boom",
+]
