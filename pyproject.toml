@@ -16,7 +16,6 @@ license = { text = "GPL2.0" }
 
 
 [project.scripts]
-youqu3-boom = "youqu3_boom.cli:cli"
 
 [build-system]
 requires = ["hatchling"]
