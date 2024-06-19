@@ -1,11 +1,10 @@
 [project]
-name = "youqu3-boom"
-description = "youqu3-boom"
+name = "youqu-html"
+description = "youqu-html"
 authors = [
     { name = "mikigo", email = "huangmingqiang@uniontech.com" },
 ]
 dependencies = [
-    "pipenv",
 ]
 dynamic = [
     "version",
@@ -25,9 +24,9 @@ build-backend = "hatchling.build"
 
 
 [tool.hatch]
-version = { path = "boom/__version__.py" }
+version = { path = "youqu_html/__version__.py" }
 
 [tool.hatch.build.targets.wheel]
 packages = [
-    "/youqu3_boom",
+    "/youqu_html",
 ]
